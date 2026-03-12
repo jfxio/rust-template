@@ -1,5 +1,23 @@
+//! An example library crate.
+//! 
 use std::iter::Iterator;
 
+/// Given a String list, `items`, convert to integers and fold using `f` starting with `init`.
+///
+/// Each fold step is printed.
+/// 
+/// # Panics
+/// 
+/// When any item can't be parsed into an integer or when `f` panics.
+///  
+/// # Examples
+/// 
+/// ```
+/// use math::noisy_fold;
+/// 
+/// let data: Vec<String> = ["5", "10", "15"].iter().map(|&s| s.to_string()).collect();
+/// assert_eq!(30, noisy_fold(data.iter(), 0, |a, b| a + b));
+/// ```
 pub fn noisy_fold<'a>(
     items: impl Iterator<Item = &'a String>, 
     init: i32, 

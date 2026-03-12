@@ -1,3 +1,5 @@
+//! An auxiliary binary crate that sums its command line arguments using `noisy-fold`.
+
 use math::noisy_fold;
 use std::env;
 

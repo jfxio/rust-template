@@ -1,3 +1,7 @@
+//! The binary crate, `main`, which takes its arguments and noisily folds the sum and product.
+//! This binary crate documentation apparently gets clobbered by the library crate documentation.
+//! 
+
 use std::env;
 use math::noisy_fold;
 

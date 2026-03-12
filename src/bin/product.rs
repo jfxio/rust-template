@@ -1,3 +1,5 @@
+//! An auxiliary binary crate that multiplies its command line arguments using `noisy-fold`.
+
 use std::env;
 use math::noisy_fold;
 
